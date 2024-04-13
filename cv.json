@@ -1,0 +1,161 @@
+{
+    "basics": {
+      "name": "Fernando Ariel Moran",
+      "label": "Full Stack Developer",
+      "image": "https://avatars.githubusercontent.com/u/101306048?v=4",
+      "email": "ariel.moran437@gmail.com",
+      "phone": "+54 1131564486",
+      "url": "",
+      "summary": "Soy un estudiante de Licenciatura en Informática apasionado por la tecnología y su aplicación práctica en el mundo actual. Mi motivación radica en aprender y crecer continuamente en este campo. Me destaco por mi compromiso y enfoque responsable en los proyectos que emprendo. Busco oportunidades para aplicar mis habilidades técnicas y creativas, contribuyendo de manera significativa a equipos de trabajo innovadores y orientados a resultados.",
+      "location": {
+        "address": "",
+        "postalCode": "1879",
+        "city": "Quilmes, Buenos aires",
+        "countryCode": "ARG ",
+        "region": "Argentina"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "fernando-moran437",
+          "url": "https://www.linkedin.com/in/fernando-moran437/"
+        },
+        {
+          "network": "GitHub",
+          "username": "Tushima437",
+          "url": "https://github.com/Tushima437"
+        }
+      ]
+    },
+    "education": [{
+      "institution": "Universidad Nacional De Quilmes",
+      "url": "https://www.unq.edu.ar",
+      "area": "Licenciatura en Informática",
+      "startDate": "2020-01-01",
+      "endDate": null
+    }
+    ],
+    "work": [
+      {
+        "name": "ASJ Servicios",
+        "position": "Desarrollador Trainee",
+        "startDate": "2022-01-01",
+        "endDate": "2023-12-31",
+        "summary": "Desarrollo full stack para proyectos, involucrando tanto la parte del front-end como back-end. Creación y gestión de bases de datos para asegurar un almacenamiento eficiente y seguro de la información."
+      },
+      {
+        "name": "Consultorio contable",
+        "position": "Asistente Contable, Secretario y Data Entry",
+        "startDate": "2022-01-01",
+        "endDate": "2022-12-31",
+        "summary": "Desempeño de funciones de secretario y data entry, asegurando una entrada precisa y oportuna de datos. Gestión de tareas administrativas generales, incluida la carga de facturas y datos contables para mantener registros financieros actualizados y precisos."
+      },
+      {
+        "name": "Consultorio medico PAMI",
+        "position": "Secretario y Data Entry",
+        "startDate": "2017-01-01",
+        "endDate": "2021-12-31",
+        "summary": "Soporte como secretario y data entry para las operaciones diarias del consultorio médico. Carga de recetas y coordinación de consultas médicas para asegurar un flujo de trabajo eficiente y una experiencia satisfactoria para los pacientes."
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Frontend"
+        ]
+      },
+      {
+        "name": "CSS",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        ]
+      },
+      {
+        "name": "Tailwind",
+        "level": "Beginner",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "level": "Avanzado",
+        "keywords": [
+          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        ]
+      },
+      {
+        "name": "Git",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Advanced"
+      }
+    ],
+    "projects": [
+      {
+        "name": "cv json",
+        "isActive": true,
+        "description": "Crear un cv descargable desde un archivo json",
+        "highlights": [
+          "En desarrollo"
+        ],
+        "url": "https://github.com/Tushima437"
+      },
+      {
+        "name": "no name",
+        "isActive": false,
+        "description": "Espacio para mas proyectos",
+        "highlights": [
+          "proximamente"
+        ],
+        "url": ""
+      },
+      {
+        "name": "no name",
+        "isActive": false,
+        "description": "Espacio para mas proyectos",
+        "highlights": [
+          "proximamente"
+        ],
+        "url": ""
+      },
+      {
+        "name": "no name",
+        "isActive": false,
+        "description": "Espacio para mas proyectos",
+        "highlights": [
+          "proximamente"
+        ],
+        "url": ""
+      }
+      
+    ]
+  }
