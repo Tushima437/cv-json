@@ -24,7 +24,7 @@ import { work } from "../../../cv.json"
                                 </div>
                                 <div>
                                     <time datetime={startDate}data-title={startDate}>{startYear}</time>
-                                    {" - "}
+                                    <span>{" - "}</span>
                                     <time datetime={endDate}data-title={endDate}>{endYear}</time>
                                 </div>
                             </header>
@@ -54,11 +54,10 @@ import { work } from "../../../cv.json"
 
     article h3{
         font-weight: 500;
-        color: #111;
+        color: var(--color-artticle-h3);
     }
 
     article h4{
-        color: #222;
         font-weight: 400;
     }
 
@@ -70,7 +69,29 @@ import { work } from "../../../cv.json"
     }
 
     time{
-        color: #555;
+        color: var(--color-time);
         font-size: 0.85;
     }
+
+    span{
+        color: var(--color-t-sep);
+    }
+
+    :root{
+    /*experience*/
+    --color-artticle-h3:#111; /* color del titulo */
+    --color-article-h4:#222; /* color del sub titulo*/
+    --color-time:#555; /* color de las fechas*/
+    }
+
+    :root[data-theme="dark"]{
+    /*experience*/
+    --color-artticle-h3: #eee; /* color del titulo */
+    --color-article-h4: #ddd; /* color del sub titulo */
+    --color-time: #999; /* color de las fechas */
+    --color-t-sep: #ffdead; /*color titulos */
+    }
+
 </style>
+
+

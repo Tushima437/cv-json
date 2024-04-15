@@ -43,9 +43,9 @@ import { projects } from "../../../cv.json"
     }
 
     article {
-        background-color: #fff;
+        background-color: var(--background-article);
         border-radius: 8px;
-        border: 1px solid #f2f2f2;
+        border: 1px solid var(--border-article);
         gap: 16px;
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@ import { projects } from "../../../cv.json"
     }
 
     article a {
-        color: #111;
+        color: var(--color--article-a);
     }
 
     article a:hover {
@@ -76,7 +76,7 @@ import { projects } from "../../../cv.json"
     }
 
     article h3 span {
-        color: rgb(0, 188, 47);
+        color: var(--color-article-h3-);
         animation-name: flicker;
         animation-duration: 3s;
         animation-timing-function: ease-in;
@@ -92,12 +92,33 @@ import { projects } from "../../../cv.json"
 
     footer span {
     border-radius: 6px;
-    background: #eee;
-    color: #444;
+    background: var(--artice-footter-span);
+    color: var(--article-span-color);
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
   }
 
+  :root{
+        /*proyects*/
+    --background-article: #fff; /*fondo de los proyectos*/
+    --border-article:  #f2f2f2; /*borde de los proyectos*/
+    --color--article-a:#111; /*nombre del proyecto/link*/
+    --color-article-h3-:rgb(0, 188, 47);/*color circulo proyecto activo */
+    --artice-footter-span:#eee; /* fondo de "en desarrollo" */
+    --article-span-color:#444; /* color de letra de "en desarollo" */
+  }
+
+  :root[data-theme="dark"]{
+        /*proyects*/
+      --background-article: #333; /* fondo de los proyectos */
+    --border-article: #444; /* borde de los proyectos */
+    --color--article-a: #ccc; /* nombre del proyecto/link */
+    --color-article-h3-: #00ff7f; /* color circulo proyecto activo */
+    --artice-footter-span: #444; /* fondo de "en desarrollo" */
+    --article-span-color: #eee; /* color de letra de "en desarollo" */
+  }
 
   </style>
+
+

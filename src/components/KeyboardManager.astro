@@ -1,6 +1,8 @@
 ---
 import { basics } from "../../cv.json"
 
+
+
 const { profiles } = basics
 
 const SOCIAL_ICONS: Record<string, string> = {
@@ -56,9 +58,29 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 
-<footer class="no-print">
+<footer id="normal-footer" class="no-print">
     Pulsa <kbd>Ctrl</kbd> + <kbd>K</kbd> para abrir las opciones
 </footer>
+
+<div id="footer-button" class="no-print">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-command"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#777"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"
+    ></path>
+  </svg>
+</div>
 
 <ninja-keys     
 data-info={JSON.stringify(profilesInfo)}
@@ -69,6 +91,18 @@ hideBreadcrumbs
 
 <script>
     import "ninja-keys"
+
+    function toggleTheme() {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
 
     const ninja = document.querySelector("ninja-keys")
     
@@ -102,8 +136,35 @@ hideBreadcrumbs
             },
             },
             ...data,
+            {id:"theme",
+            title: "Theme",
+            icon: `<svg style="margin-right: 8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 256 256"><path fill="#000000" d="M174 232a6 6 0 0 1-6 6H88a6 6 0 0 1 0-12h80a6 6 0 0 1 6 6m40-128a85.56 85.56 0 0 1-32.88 67.64A18.23 18.23 0 0 0 174 186v6a14 14 0 0 1-14 14H96a14 14 0 0 1-14-14v-6a18 18 0 0 0-7-14.23a85.59 85.59 0 0 1-33-67.25c-.26-46.61 37.39-85.4 83.93-86.52A86 86 0 0 1 214 104m-12 0a74 74 0 0 0-75.79-74C86.17 31 53.78 64.34 54 104.42a73.67 73.67 0 0 0 28.4 57.87A29.92 29.92 0 0 1 94 186v6a2 2 0 0 0 2 2h26v-47.51l-30.24-30.25a6 6 0 0 1 8.48-8.48L128 135.52l27.76-27.76a6 6 0 0 1 8.48 8.48L134 146.49V194h26a2 2 0 0 0 2-2v-6a30.18 30.18 0 0 1 11.7-23.78A73.59 73.59 0 0 0 202 104"/></svg>`,
+            hotkey: "ctrl+i",
+            section: "Cambiar modo",
+            handler: () =>{
+              toggleTheme()
+            },
+            },
         ]
     }
+
+
+    const footerButton = document.getElementById("footer-button")
+
+    footerButton?.addEventListener("click", () => {
+      var event = new KeyboardEvent("keydown", {
+        key: "K",
+        code: "KeyK",
+        keyCode: 75,
+        which: 75,
+        ctrlKey: true,
+        altKey: false,
+        shiftKey: false,
+        metaKey: false
+      })
+
+      document.dispatchEvent(event)
+    })
 </script>
 
 <style>
@@ -127,8 +188,9 @@ hideBreadcrumbs
 
 
     footer{
-      background: #fdfdfd;
-      border-top: 1px solid #eee;
+      color: var(--footer-color);
+      background: var(--footer-bg);
+      border-top: 1px solid var(--footer-b);
       position: fixed;
       bottom: 0px;
       width: 100%;
@@ -146,9 +208,60 @@ hideBreadcrumbs
     }
 
     kbd{
-        background: #eee;
+        background: var(--kbd-background);
         border-radius: 4px;
         padding: 2px 4px;
         font-size: 12px;
+    }
+
+    @media (min-width: 601px) {
+    #normal-footer {
+      display: block;
+    }
+
+    #footer-button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #normal-footer {
+      display: none;
+    }
+
+    #footer-button {
+      background: var(--footer-media-button-bg);
+      position: fixed;
+      border: 1px solid var(--footer-media-button-b);
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+    :root{
+          /*kbm*/
+    --kbd-background: #eee;
+    --footer-bg:#fdfdfd;
+    --footer-b: #eee;
+    --footer-media-button-bg:#fff;
+    --footer-media-button-b:#eee;
+    --footer-color: black;
+    }
+
+    :root[data-theme="dark"]{
+          /*kbm*/
+    --kbd-background: #444;
+    --footer-bg: #1f1f1f;
+    --footer-b: #333;
+    --footer-media-button-bg: #333;
+    --footer-media-button-b: #444;
+    --footer-color: white;
     }
 </style>

@@ -53,13 +53,25 @@ const SKILLS_ICONS: Record<string, any> = {
 
     li {
         align-items: center;
-        background: #eee;
+        background: var(--background-li);
         border-radius: 6px;
-        color: black;
+        color: var(--color-li);
         display: flex;
         font-size: 0.8rem;
         font-weight: 500;
         gap: 4px;
         padding: 0.2rem 0.6rem;
     } 
+
+    :root{
+        /*Skills*/
+    --background-li: #eee; /*color de las skils*/
+    --color-li: black; /*color de la letra*/
+    }
+
+    :root[data-theme="dark"]{
+        /*Skills*/
+    --background-li: #444; /* color de las skils */
+    --color-li: #fff; /* color de la letra */
+    }
 </style>

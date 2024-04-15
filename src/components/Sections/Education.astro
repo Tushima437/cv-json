@@ -50,11 +50,11 @@ import { education } from "../../../cv.json"
 
     article h3{
         font-weight: 500;
-        color: #111;
+        color: var(--color-artticle-h3);
     }
 
     article h4{
-        color: #222;
+        color: var(--color-article-h4);
         font-weight: 400;
     }
 
@@ -66,8 +66,21 @@ import { education } from "../../../cv.json"
     }
 
     time{
-        color: #555;
+        color: var(--color-time);
         font-size: 0.85;
     }
 
+    :root{
+        /*educattion*/
+    --color-artticle-h3:#111; /* color del titulo */
+    --color-article-h4:#222; /* color del sub titulo*/
+    --color-time:#555; /* color de las fechas*/
+    }
+
+    :root[data-theme="dark"]{
+        /*educattion*/
+    --color-artticle-h3: #eee; /* color del titulo */
+    --color-article-h4: #ddd; /* color del sub titulo */
+    --color-time: #999; /* color de las fechas */
+    }
 </style>

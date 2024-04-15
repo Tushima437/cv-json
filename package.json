@@ -15,5 +15,9 @@
     "astro": "^4.6.1",
     "ninja-keys": "^1.2.2",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.200",
+    "@iconify/tailwind": "^0.1.4"
   }
 }

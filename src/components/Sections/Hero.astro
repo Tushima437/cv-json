@@ -104,10 +104,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
     h1{
         font-size: 2rem;
+        color: var(--h1-primary);
     }
 
     h2{
-        color: #444;
+        color: var(--h2--primary);
         font-weight: 500;
         font-size: 1.3rem;
         text-wrap: balance;
@@ -121,7 +122,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
 
     span {
-        color: #666;
+        color: var(--span-secondary);
         display: flex;
         align-items: center;
         gap: 0.25rem;
@@ -130,7 +131,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
 
     footer {
-        color: #555;
+        color: var(--color-footer);
         font-size: 0.65rem;
         display: flex;
         gap: 4px;
@@ -138,11 +139,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
 
     footer a {
-        color: #777;
+        color: var(--color-footer-a);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #eee;
+        border: 1px solid var(--color-footer-a-border);
         padding: 4px;
         height: 32px;
         width: 32px;
@@ -151,8 +152,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
 
     footer a:hover {
-        background: #eee;
-        border: 1px solid #ddd;
+        background: var(--background--a--hover);
+        border: 1px solid var(--border--a--hover);
     }
 
     .print{
@@ -169,6 +170,30 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         .no-print{
             display: none;
         }
+    }
+
+
+    :root{
+    /*Hero*/
+    --h2--primary: #444; /* Color primario para h2 */
+    --span-secondary: #666; /* Color secundario para span */
+    --color-footer: #555; /* Color para el footer Hero */
+    --color-footer-a:#777;  /* Color para enlaces */
+    --color-footer-a-border:#eee; /*color para borde de enlaces*/
+    --background--a--hover:#eee; /* Color de fondo al pasar el ratón links*/
+    --border--a--hover:#ddd; /* Color del borde al pasar el ratón links*/
+    }
+
+    :root[data-theme="dark"]{
+    /*Hero*/
+    --h1-primary:#ffdead;
+    --h2--primary: #ccc; /* Color primario para h2 */
+    --span-secondary: #ffdead; /* Color secundario para span */
+    --color-footer: #aaa; /* Color para el footer Hero */
+    --color-footer-a: #ffdead; /* Color para enlaces */
+    --color-footer-a-border: #444; /* color para borde de enlaces */
+    --background--a--hover: #444; /* Color de fondo al pasar el ratón links */
+    --border--a--hover: #666; /* Color del borde al pasar el ratón links */
     }
 </style>
 
