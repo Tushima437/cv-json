@@ -39,7 +39,7 @@
       {
         "name": "ASJ Servicios",
         "position": "Desarrollador Trainee",
-        "startDate": "2022-01-01",
+        "startDate": "2023-01-02",
         "endDate": "2023-12-31",
         "summary": "Desarrollo full stack para proyectos, involucrando tanto la parte del front-end como back-end. Creación y gestión de bases de datos para asegurar un almacenamiento eficiente y seguro de la información."
       },
@@ -128,34 +128,6 @@
           "En desarrollo"
         ],
         "url": "https://github.com/Tushima437"
-      },
-      {
-        "name": "no name",
-        "isActive": false,
-        "description": "Espacio para mas proyectos",
-        "highlights": [
-          "proximamente"
-        ],
-        "url": ""
-      },
-      {
-        "name": "no name",
-        "isActive": false,
-        "description": "Espacio para mas proyectos",
-        "highlights": [
-          "proximamente"
-        ],
-        "url": ""
-      },
-      {
-        "name": "no name",
-        "isActive": false,
-        "description": "Espacio para mas proyectos",
-        "highlights": [
-          "proximamente"
-        ],
-        "url": ""
       }
-      
     ]
   }

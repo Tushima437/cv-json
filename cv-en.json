@@ -1,0 +1,151 @@
+{
+    "basics": {
+        "name": "Fernando Ariel Moran",
+        "label": "Full Stack Developer",
+        "image": "https://avatars.githubusercontent.com/u/101306048?v=4",
+        "email": "ariel.moran437@gmail.com",
+        "phone": "+54 1131564486",
+        "url": "",
+        "summary": "I am a Bachelor of Computer Science student passionate about technology and its practical application in the current world. My motivation lies in continuously learning and growing in this field. I stand out for my commitment and responsible approach to the projects I undertake. I am seeking opportunities to apply my technical and creative skills, contributing significantly to innovative and results-oriented teams.",
+        "location": {
+            "address": "",
+            "postalCode": "1879",
+            "city": "Quilmes, Buenos Aires",
+            "countryCode": "ARG",
+            "region": "Argentina"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "fernando-moran437",
+                "url": "https://www.linkedin.com/in/fernando-moran437/"
+            },
+            {
+                "network": "GitHub",
+                "username": "Tushima437",
+                "url": "https://github.com/Tushima437"
+            }
+        ]
+    },
+    "education": [
+        {
+            "institution": "National University of Quilmes",
+            "url": "https://www.unq.edu.ar",
+            "area": "Bachelor of Computer Science",
+            "startDate": "2020-01-01",
+            "endDate": null
+        }
+    ],
+    "work": [
+        {
+            "name": "ASJ Servicios",
+            "position": "Trainee Developer",
+            "startDate": "2023-01-02",
+            "endDate": "2023-12-31",
+            "summary": "Full-stack development for projects, involving both front-end and back-end. Creation and management of databases to ensure efficient and secure storage of information."
+        },
+        {
+            "name": "Accounting Office",
+            "position": "Accounting Assistant, Secretary, and Data Entry",
+            "startDate": "2022-01-01",
+            "endDate": "2022-12-31",
+            "summary": "Performing secretary and data entry functions, ensuring accurate and timely data entry. General administrative tasks management, including loading invoices and accounting data to maintain updated and accurate financial records."
+        },
+        {
+            "name": "PAMI Medical Office",
+            "position": "Secretary and Data Entry",
+            "startDate": "2017-01-01",
+            "endDate": "2021-12-31",
+            "summary": "Support as secretary and data entry for the daily operations of the medical office. Prescription loading and medical appointments coordination to ensure efficient workflow and satisfactory experience for patients."
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "level": "Advanced",
+            "keywords": [
+                "Web Development",
+                "Frontend"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "Advanced",
+            "keywords": [
+                "Web Development",
+                "Frontend",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "level": "Advanced",
+            "keywords": [
+                "Web Development",
+                "Frontend",
+                "Backend",
+                "Fullstack"
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "level": "Beginner",
+            "keywords": [
+                "Web Development",
+                "Frontend",
+                "CSS Framework",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "level": "Advanced",
+            "keywords": [
+                "Databases",
+                "SQL",
+                "Data Storage",
+                "Backend"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Advanced",
+            "keywords": [
+                "Version Control",
+                "Collaboration",
+                "Source Code"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Advanced",
+            "keywords": [
+                "Version Control",
+                "Collaboration",
+                "Source Code",
+                "Git"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Advanced"
+        }
+    ],
+    "projects": [
+        {
+            "name": "cv json",
+            "isActive": true,
+            "description": "Creating a downloadable CV from a JSON file",
+            "highlights": [
+                "In progress"
+            ],
+            "url": "https://github.com/Tushima437"
+        }
+    ]
+}
