@@ -132,6 +132,9 @@ hideBreadcrumbs
             hotkey: "ctrl+P",
             section: "Acciones",
             handler: () =>{
+                if(localStorage.getItem('theme')=="dark"){
+                  toggleTheme();
+                }
                 window.print()
             },
             },
