@@ -1,7 +1,7 @@
 ---
 import Section from "../Section.astro"
 
-import { projects } from "../../../cv.json"
+import GitHub from "../../icons/GitHub.astro"
 
 import { getI18N } from '../../pages/i18n';
 
@@ -17,7 +17,7 @@ let sectionTitle = currentLocale === 'es' ? "Proyectos" : "Projects";
     <ul>
       {
         projects2.map(
-          ({ url, description, highlights, name, isActive}) => {
+          ({ url, description, highlights, name, isActive, github}) => {
             return (
               <li>
                 <article>
@@ -26,6 +26,16 @@ let sectionTitle = currentLocale === 'es' ? "Proyectos" : "Projects";
                     {name}
                     </a>
                     {isActive && <span>•</span>}
+                    {github && (
+                      <a
+                        class="github-code-link"
+                        href={github}
+                        target="_blank"
+                        title={`Ver código fuente del proyecto ${name}`}
+                      >
+                        <GitHub />
+                      </a>
+                    )}
                     </h3>
                     <p>{description}</p>
                   </header>
