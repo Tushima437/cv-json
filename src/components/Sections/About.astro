@@ -1,13 +1,17 @@
 ---
 import Section from "../Section.astro"
 
-import { basics } from "../../../cv.json"
-const { summary } = basics
+import { getI18N } from '../../pages/i18n';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+let sectionTitle = currentLocale === 'es' ? "Sobre mí" : "About me";
 ---
 
-<Section title="Sobre mí">
+<Section title={sectionTitle}>
     <p>
-      {summary}
+      {i18n?.basics.summary}
     </p>
   </Section>
 

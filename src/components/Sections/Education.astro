@@ -1,14 +1,21 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "../../../cv.json"
+import { getI18N } from '../../pages/i18n';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const educations = Array.isArray(i18n?.education) ? i18n.education : [];
+
+let sectionTitle = currentLocale === 'es' ? "Educacion" : "Education";
 ---
 
-<Section title="Educacion">
+<Section title={sectionTitle}>
 
     <ul>
         {
-            education.map(
+            educations.map(
               ({ institution, startDate, endDate, area}) => {
                 const startYear = new Date(startDate).getFullYear()
                 const endYear =

@@ -22,6 +22,12 @@ const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
 const linkedUrl = linkedInfo?.url
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+
+
+const { currentLocale } = Astro
+
+let email_t = currentLocale === 'es' ? `Enviar un corre electronico a ${name} al corre ${email}` : `Send tmail to ${name} at ${email}`;
+let phone_t = currentLocale === 'es' ? `Llamar por teléfono a ${name} al número ${phone}` : `call ${name} at ${phone}`
 ---
 
 
@@ -42,7 +48,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
                 email &&(
                     <a 
                     href={'mailto:${email}'}
-                    title={'Enviar un corre electronico a ${name} al corre ${email}'}
+                    title={email_t}
                     target="_blank"
                     rel="noopener noreferrer"
                     >
@@ -54,7 +60,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
                 phone && (
                   <a
                     href={`tel:${phone}`}
-                    title={`Llamar por teléfono a ${name} al número ${phone}`}
+                    title={phone_t}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -65,11 +71,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
             {
                 profiles.map(({ network, url, username }) => {
                   const Icon = SOCIAL_ICONS[network]
-      
+                    
+                  let perfil_t = currentLocale === 'es' ? `Visitar el perfil de ${name} en ${network}` : `Visit profile of ${name} on ${network}`;
+
                   return (
                     <a
                       href={url}
-                      title={`Visitar el perfil de ${name} en ${network}`}
+                      title={perfil_t}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -2,12 +2,21 @@
 import Section from "../Section.astro"
 
 import { projects } from "../../../cv.json"
+
+import { getI18N } from '../../pages/i18n';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const projects2 = Array.isArray(i18n?.projects) ? i18n.projects : [];
+
+let sectionTitle = currentLocale === 'es' ? "Proyectos" : "Projects";
 ---
 
-<Section title="Proyectos">
+<Section title={sectionTitle}>
     <ul>
       {
-        projects.map(
+        projects2.map(
           ({ url, description, highlights, name, isActive}) => {
             return (
               <li>
