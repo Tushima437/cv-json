@@ -25,6 +25,10 @@ Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio
 
 ## 🛠️ Con un menu integrado
 
+<img src="menu"></img>
+
+
+
 
 
 
