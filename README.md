@@ -12,14 +12,15 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 y
 Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio-json/tree/main">midudev</a>
 
+<img src="ligthttheme"></img>
 
 </p>
 
 <p></p>
 
-## 💡 Ligth and Dark theme luz
+## 💡 Dark theme y version en ingles!
 <div style="display: flex;">  
-<img src="ligthttheme"></img> <img src="darkttheme"></img>
+<img src="darkttheme"></img>
 </div> 
 
 ## 🛠️ Stack
